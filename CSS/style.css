@@ -1,0 +1,156 @@
+body{
+  
+    font-family: 'Raleway', sans-serif;
+    color:black;
+    background-color:#f2f2f2;
+
+}
+/* Header */
+#entete{
+    display:flex;
+    justify-content:space-between;
+}
+h3{
+    font-weight:bolder;
+ 
+}
+    /*nav*/
+nav ul {
+    display:flex;
+    justify-content:space-between;
+    list-style-type: none;
+}
+
+nav ul li{
+    margin:0 10px 0 10px;
+}
+
+nav ul a{
+    text-decoration: none;
+    font-weight: bold;
+}
+    /*Recherche*/
+#formulaire{
+    display:flex;
+    width:275px;
+    height:30px; 
+    border-radius:15px;
+}
+
+#searchButton{
+    background-color:#0065fc;;
+    color:white;
+    padding:5px;
+    border-radius:0 15px 15px 0;
+
+}
+
+#iSearch{
+    background-color:grey;
+    border-radius:15px 0 0 15px;
+    height:auto;
+    padding:5px;
+}
+
+
+    /*icones*/
+.filtersSelect .fas{
+    background-color:#deebff;
+    height:auto;
+    color:#0065fc;
+    border:1px #deebff solid;
+    border-radius:100%;
+
+}
+/*Titres de sections*/
+h2{
+    font-weight:bold;
+ }
+/*filtres*/
+
+.filtersSelect{
+    color:black;
+    border:1px #d1d4d8 solid; 
+    height:25px;
+    border-radius:15px;
+    padding:5px;
+}
+#filtres{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items:center;
+    width:50%;    
+}
+#filtres a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    padding:10px;
+}
+i{
+    height:auto;
+}
+
+/*Section hébergements*/
+#hebergements{
+   display:flex;
+    flex-direction:row;
+    width:100%;
+}
+#detailHebergements{
+        
+        border:1px green solid;
+        width:80%;
+}
+#listHebergements{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.detailHebergement{
+    position:relative;
+    max-width:30;
+    /*max-height:225px;*/
+    padding:5px;
+    border:1px red solid;
+    border-radius:15px;
+    background:white;
+
+}
+.detailHebergement img{
+    width:100%;
+    max-height:166px;
+    border-radius:15px 15px 0 0;
+    z-index:0;
+}
+.detailHebergement span{
+    font-weight:bold;
+}
+/*les plus populaires*/
+#popularHebergements{
+
+    border:1px blue solid;
+}
+#mostPopular{
+    display:flex;
+    width:25%;
+    flex-direction:row;
+}
+
+.popularHebergement img{
+    max-height:150px;
+}
+
+
+
+/*Responsive*/
+@media screen and (max-width:800px){
+    #hebergements{
+        display:flex;
+         flex-direction:column-reverse;
+         width:100%;
+     }
+}

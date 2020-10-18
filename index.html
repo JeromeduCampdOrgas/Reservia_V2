@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&family=Raleway:wght@100&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+    <title>Reservia</title>
+</head>
+<body>
+<!--Header-->
+    <header>
+        <div id = "entete">
+            <img src="./images/logo/Reservia.svg" alt="logo">
+
+        
+            <nav>
+                <ul>
+                    <li><a  href="#">Hébergements</a></li>
+                    <li><a  href="#">Activités</a></li>
+                    <li><a  href="#">S'inscrire</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="enteteDescription">
+
+            <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+            <h5>En plein centre ville ou en pleine nature</h5>
+        </div>
+    </header>
+<!--Zone de recherche et zone de filtres-->
+    <section id ="searchZone">
+        <!--zone de recherche-->
+            <form method = "POST" action="#" id="formulaire">
+                <i class="fas fa-map-marker-alt" id="iSearch"></i>
+                <input type="text" name="search" id="search">
+                <input type="submit" id ="searchButton" value="Rechercher">
+            </form>
+
+        <!--zone de filtres-->
+        <div id="filtres">
+            <h5>Filtres</h5>
+            <div class ="filtersSelect" id ="economique">
+                <i class="fas fa-money-bill-wave"> </i>
+                <a href="#">Economique</a>
+            </div>
+            <div class ="filtersSelect" id ="Familial">
+                <i class="fas fa-child"></i>
+                <a href="#">Familial</a>
+            </div>
+            <div class ="filtersSelect" id ="Romantique">
+                <i class="fas fa-heart"></i>
+                <a href="#">Romantique</a>
+            </div>
+            <div class ="filtersSelect" id ="Animaux">
+                <i class="fas fa-dog"></i>
+                <a href="#">Animaux autorisés</a>
+            </div>
+        </div>
+
+    </section>
+<!--Hebergements résultats de la recherche-->
+    <!--Les hébergements-->
+    <section id="hebergements">
+        <div id="detailHebergements">
+            <h2>Hébergements à Marseille</h2>
+            <div id="listHebergements">
+                <figure class = "detailHebergement">
+                    <a href="#"><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" target="_blank" alt=""></a>
+                    <span>Auberge de la Cannebière</span><br/>
+                        Nuit à partir de <span class="tarifs">25€</span><br/>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </figure>
+                <figure class = "detailHebergement">
+                    <a href="#"><img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" target="_blank" alt=""></a>
+                    <span>Hôtel du port</span><br/>
+                        Nuit à partir de <span class="tarifs">52€</span><br/>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </figure>
+                <figure class = "detailHebergement">
+                    <a href="#"><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" target="_blank" alt=""></a>
+                    <span>Hôtel Les mouettes</span><br/>
+                        Nuit à partir de <span class="tarifs">76€</span><br/>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </figure>
+                <figure class = "detailHebergement">
+                    <a href="#"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" target="_blank" alt=""></a>
+                    <span>Hôtel de la mer</span><br/>
+                        Nuit à partir de <span class="tarifs">46€</span><br/>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </figure>
+                <figure class = "detailHebergement">
+                    <a href="#"><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" target="_blank" alt=""></a>
+                    <span>Auberge Le Panierr</span><br/>
+                        Nuit à partir de <span class="tarifs">23€</span><br/>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </figure>
+                <figure class = "detailHebergement">
+                    <a href="#"><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" target="_blank" alt=""></a>
+                    <span>Hôtel chez Amina</span><br/>
+                        Nuit à partir de <span class="tarifs">96€</span><br/>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </figure>
+
+               
+
+                
+            </div>
+       </div>
+        <!--les hébergements les plus populaires--> 
+       <aside id="popularHebergements">
+           <h2>Les plus populaires</h2>
+           <div id ="mostPopular">
+                <!--<figure class= "popularHebergement">
+                    <a href="#"><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" target="_blank" alt=""></a>
+                    <div>
+                        <span>Hôtel Le soleil du matin</span><br/>
+                            Nuit à partir de <span class="tarifs">128€</span><br/>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                        </figure>-->
+
+           </div>
+
+       </aside>
+
+
+    </section>
+    
+</body>
+</html>
