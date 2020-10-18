@@ -112,8 +112,7 @@ i{
 
 .detailHebergement{
     position:relative;
-    max-width:30;
-    /*max-height:225px;*/
+    max-width:250px;
     padding:5px;
     border:1px red solid;
     border-radius:15px;
