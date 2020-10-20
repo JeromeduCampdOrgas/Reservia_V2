@@ -2,14 +2,11 @@ body{
   
     font-family: 'Raleway', sans-serif;
     color:black;
-    background-color:#f2f2f2;
-
 }
 /* Header */
 #entete{
     display:flex;
     justify-content:space-between;
-
 }
 h3{
     font-weight:bolder;
@@ -66,48 +63,41 @@ nav ul a:hover{
 #iSearch{
     background-color:grey;
     border-radius:15px 0 0 15px;
-    height:auto;
     padding:5px;
 }
 
-
-    /*icones*/
-.filtersSelect .fas{
-    background-color:grey;/*#deebff;*/
-    height:auto;
-    color:#0065fc;
-    border:1px #deebff solid;
-    border-radius:100%;
-
-}
 /*Titres de sections*/
 h2{
     font-weight:bold;
  }
 /*filtres*/
 
-.filtersSelect{
-    color:black;
-    border:1px #d1d4d8 solid; 
-    height:25px;
-    border-radius:15px;
-    padding:5px;
-}
 #filtres{
-    display:flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    align-items:center;
-    width:50%;    
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
 }
-#filtres a{
-    text-decoration:none;
-    color:black;
-    font-weight:bold;
-    padding:10px;
+
+.filtersSelect{
+	height:25px;
+	min-width:80px;
+	margin:5px;
+	padding:0;
+	border:1px #efefef solid;
+	border-radius:15px;
 }
-i{
-    height:auto;
+.filtersSelect a{
+	font-weight:bold;
+	margin:5px;
+	text-decoration:none;
+}
+.filtersSelect i{
+	height:15px;
+	width:15px;
+	color:#0065fc;
+	border-radius:100%;
+	background:#deebff;
+	padding:5px;
 }
 
 /*Section hébergements*/
@@ -205,7 +195,8 @@ header{
         border-bottom:2px solid blue;
         }	
 
-
+/*Recherche et filtres*/
+        /*filtres*/
 
 /*Section Hébergements*/
 
@@ -214,5 +205,5 @@ header{
          flex-direction:column-reverse;
          width:100%;
      }
-/*Fin @media
+/*Fin @media*/
 }
