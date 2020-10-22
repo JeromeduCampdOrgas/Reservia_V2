@@ -61,6 +61,7 @@ nav ul a:hover{
     background-color:#0065fc;;
     color:white;
     padding:5px;
+    border:none;
     border-radius:0 15px 15px 0;
 
 }
@@ -174,6 +175,13 @@ nav ul a:hover{
     font-weight:bolder;
     
 }
+/*stars*/
+.fa-star{
+    color:#0065FC;
+  }
+  .non{
+    color:#deebff;
+  }
 /*Activités*/
 h2{
     margin-left:50px;
@@ -349,7 +357,7 @@ header{
             height:100%;
         }
         .listActivite{
-            min-height:200px;
+            max-height:200px;
         }
 
 /*footer*/
