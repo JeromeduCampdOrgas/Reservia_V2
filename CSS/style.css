@@ -150,6 +150,21 @@ nav ul a:hover{
     font-weight:bold;
 }
 /*les plus populaires*/
+
+#titlePopular{
+    position:relative;
+}
+.fa-chart-line{
+    position:absolute;
+    top:0;
+    right:0;
+
+}
+
+
+
+
+
 #popularHebergements{
     width:30%;
     background-color:#f2f2f2;
@@ -158,6 +173,7 @@ nav ul a:hover{
 #popularHebergements h2{
     margin-left:45px;
 }
+
 .popularHebergement{
     display:flex;
     background:#fff;
