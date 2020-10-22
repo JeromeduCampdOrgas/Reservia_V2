@@ -3,15 +3,28 @@ body{
     font-family: 'Raleway', sans-serif;
     color:black;
 }
+ul {
+    list-style-type: none;
+}
+ul a{
+    text-decoration: none;
+}
+ul li{
+    margin:0 10px 0 10px;
+}
+/*Titres de sections*/
+h2{
+    font-weight:bold;
+ }
+h3{
+    font-weight:bold;
+}
 /* Header */
 #entete{
     display:flex;
     justify-content:space-between;
 }
-h3{
-    font-weight:bolder;
- 
-}
+
     /*nav*/
 #navigation{
     display:flex;
@@ -23,22 +36,13 @@ h3{
     color:#0065fc;
     font-weight: bold;
 }
-nav ul {
-    list-style-type: none;
-}
 
-nav ul li{
-    margin:0 10px 0 10px;
-}
+
 
 nav ul a{
-    text-decoration: none;
     font-weight: bold;
 }
-nav ul a{
-    text-decoration: none;
-    font-weight: bold;
-}
+
 nav ul a:hover{
     color:#0065fc;
     font-weight: bolder;
@@ -66,10 +70,6 @@ nav ul a:hover{
     padding:5px;
 }
 
-/*Titres de sections*/
-h2{
-    font-weight:bold;
- }
 /*filtres*/
 
 #filtres{
@@ -232,7 +232,6 @@ h2{
 #activites  :nth-child(5){
     grid-column: 4;
     grid-row: 1;
-   
     overflow: hidden;
 }
 #activites  :nth-child(6){
@@ -240,6 +239,20 @@ h2{
     grid-row: 2;
     overflow: hidden;
 }
+
+/*footer*/
+footer{
+    display:flex;
+    justify-content: space-between;  
+    background-color:#f2f2f2;
+    width:100%;
+}
+.footerElement ul{
+    margin-left:0;
+    padding:0;
+}
+
+
 
 
 
