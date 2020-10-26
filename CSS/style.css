@@ -61,6 +61,7 @@ nav ul a:hover{
     background-color:#0065fc;;
     color:white;
     padding:5px;
+    height:30px;
     border:none;
     border-radius:0 15px 15px 0;
 }
@@ -194,71 +195,119 @@ figure:hover{
   .non{
     color:#deebff;
 }
-/*Activités*/
-h2{
-    margin-left:50px;
-}
-.listActivite{
+#listeActivites{
     display:flex;
     flex-direction:column;
-    justify-content: space-between;
-    border-radius:15px;
-    border:1px #efefef solid;
-    box-shadow:1px 1px 1px #efefef;
-    font-weight:bold;
-    object-fit:contain;
-}
-.listActivite img{
-    max-width:100%;
-    max-height:100%;      
-}
-.site{
-    text-decoration:none;
-    padding:10px;
-}
-
-#activites{
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-   /* gap:0;*/
-    height:600px;
-    width:100%;    
-    
+    justify-content:flex-end;
+    position:relative;
+    width:100%;
+    height:600px; 
     box-sizing:border-box;
-}
-#carte1{
-    grid-column:1 / 2;
-    grid-row:1 / 3;
+  }
+  #listeActivites h2{
+    position:absolute;
+    top:0;
+  
+  }
+  #activites{
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:nowrap;
+      width:100%;
+      margin:auto;
+      height:500px;
+      box-sizing:border-box;
 
-}
-#activites  :nth-child(2){
-    grid-column:2;
-    grid-column-end: 2;
-    grid-row:1;
-    overflow: hidden;
-}
-#activites  :nth-child(3){
-    grid-column:2;
-    grid-row:2;
-    overflow: hidden;
-}
-#activites  :nth-child(4){
-    grid-column: 3;
-    grid-row: 1/2; 
-    height:190%;
-    overflow: hidden;
-}
-#activites  :nth-child(5){
-    grid-column: 4;
-    grid-row: 1;
-    overflow: hidden;
-}
-#activites  :nth-child(6){
-    grid-column: 4;
-    grid-row: 2;
-    overflow: hidden;
-}
+  }
+  .carte{
+    height:90%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius:15px 15px 0 0; 
+  }
+  .carteColonne{
+    height:45%;
+        border-radius:15px;
+    box-shadow: 2px 2px #f2f2f2;
+  }
+  .carteColonneImg{
+    height:80%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius:15px 15px 0 0;
+  }
+  .siteNomColonne{
+    height:20%;
+    background:#fff;  
+    border:1px #f2f2f2 solid;
+   
+    border-radius:0 0 15px 15px;
+  }
+  .site{
+    display:block;
+    text-decoration:none;
+    color:#000;
+    font-weight:bold;
+    margin:10px auto auto 10px;
+  }  
+  .siteNom{
+    height:10%;
+    background:#fff;
+    border:1px #f2f2f2 solid;
+    box-shadow:1px 1px 1px #efefef;
+    border-radius:0 0 15px 15px;
+  }
+  
+  #activitesPart1{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    align-content: space-between;
+    width:50%;
+    height:100%;
+  }
+  .carteVerticale1{
+    width:50%;
+    margin: 0 15px 0 15px;
+    height:100%;
+    border-radius:15px;
+    box-shadow: 2px 2px #f2f2f2;
+  }
+  
+  .carteVerticale2{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin: 0 15px 0 15px;
+    width:50%; 
+    height:100%;
+  
+  }
+  
+  #carte1{
+    background-image: url("../images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+  }
+  #carte2{
+    background-image: url("../images/activites/4_small/paul-hermann-QFTrLdQIRhI-resize.jpg");
+  }
+  #carte3{
+    background-image: url("../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+  }
+  
+  
+  #activitesPart2{
+    display:flex;
+    width:50%;
+  }
+  #carte4{
+    background-image: url("../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+  }
+  #carte5{
+    background-image: url("../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+  }
+  #carte6{
+    background-image: url("../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+  }
 
 /*footer*/
 footer{
