@@ -251,61 +251,61 @@ figure:hover{
       margin:auto;
       height:500px;
       box-sizing:border-box;
+      
+  }
 
-  }
-  .carte{
-    height:90%;
-    background-size:cover;
-    background-repeat: no-repeat;
-    border-radius:15px 15px 0 0; 
-  }
-  .carteColonne{
-    height:45%;
-    border-radius:15px;
-    box-shadow: 2px 2px 15px #f2f2f2;
-  }
-  .carteColonneImg{
-    height:80%;
-    background-size:cover;
-    background-repeat: no-repeat;
-    border-radius:15px 15px 0 0;
-  }
-  .siteNomColonne{
-    height:20%;
-    background:#fff;  
-    border:1px #f2f2f2 solid;
-    border-radius:0 0 15px 15px;
-  }
-  .site{
-    display:block;
-    text-decoration:none;
-    color:#000;
-    font-weight:bold;
-    margin:10px auto auto 10px;
-  }  
-  .siteNom{
-    height:10%;
-    background:#fff;
-    border:1px #f2f2f2 solid;
-    /*box-shadow:1px 1px 1px #efefef;*/
-    border-radius:0 0 15px 15px;
-  }
   
   #activitesPart1{
     display:flex;
-    flex-direction:row;
-    flex-wrap:nowrap;
-    align-content: space-between;
+    justify-content:space-between;
     width:50%;
     height:100%;
   }
-  .carteVerticale1{
+  .vignette{
     width:50%;
-    margin: 0 15px 0 15px;
-    padding:2px;
+  }
+  .carteVerticale1{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:100%;
+    border:1px #f2f2f2 solid;
+    border-radius:15px;
+  }
+  .carte{
+    position:relative;
+    width:100%;
     height:100%;
     border-radius:15px;
-    box-shadow: 2px 2px  #f2f2f2;
+    box-sizing: border-box;
+  }
+  .carte h3{
+    position:absolute;
+    bottom:0;    
+    margin-bottom:0;
+    height:12%;
+    width:100%;
+    color:#000;
+    background:#fff;
+    border-radius:0 0 15px 15px;
+    padding:15px 5px 5px 25px;
+    box-sizing: border-box;
+
+  }
+    .carteColonne h3{
+    position:absolute;
+    bottom:0;
+    margin-bottom:0;
+    height:25%;
+    width:100%;
+    color:#000;
+    background:#fff;
+    border-radius:0 0 15px 15px;
+    padding:15px 5px 5px 25px;
+    box-sizing: border-box;
+  }
+  .carteVerticale1 :hover{
+    box-shadow:10px 5px 5px #f1f1f1;
   }
 
   .carteVerticale2{
@@ -315,32 +315,58 @@ figure:hover{
     margin: 0 15px 0 15px;
     width:50%; 
     height:100%;
-  
   }
-  
-  #carte1{
-    background-image: url("../images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+.vignetteColonne{
+  width:100%;
+  height:45%;
+  border:1px #f2f2f2 solid;
+  border-radius:15px;
+}
+.carteColonne{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    width:100%;
+    height:100%;
+    border-radius:15px;
+    box-sizing: border-box;
   }
-  #carte2{
-    background-image: url("../images/activites/4_small/paul-hermann-QFTrLdQIRhI-resize.jpg");
-  }
-  #carte3{
-    background-image: url("../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-  }
-  
-  
+
+
+.vignetteColonne :hover{
+  box-shadow:10px 5px 5px #f1f1f1;
+}
+
   #activitesPart2{
     display:flex;
+    justify-content:space-between;
     width:50%;
+    height:100%;
   }
-  #carte4{
+  
+#carte1{
+  background-image:url("../images/activites/3_medium/reno-laithienne-qugjhdy5fyk-unsplash.jpg");
+  background-size: contain;
+}
+#carte2{
+    background-image: url("../images/activites/4_small/paul-hermann-QFTrLdQIRhI-resize.jpg");
+    background-size: contain;
+  }
+#carte3{
+    background-image: url("../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: contain;
+  }
+#carte4{
     background-image: url("../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-size: contain;
   }
   #carte5{
     background-image: url("../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: contain;
   }
   #carte6{
     background-image: url("../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-size: contain;
   }
 
 /*footer*/
