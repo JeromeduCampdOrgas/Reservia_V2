@@ -24,6 +24,8 @@ h3{
 #entete{
     display:flex;
     justify-content:space-between;
+    width:98%;
+    margin:auto;
 }
 
     /*nav*/
@@ -50,6 +52,10 @@ nav ul a:hover{
     border-bottom:2px #0065fc solid;
 }
     /*Recherche*/
+#searchZone{
+    width:98%;
+    margin:auto auto 25px auto;
+}
 #formulaire{
     display:flex;
     width:275px;
@@ -67,10 +73,11 @@ nav ul a:hover{
 }
 
 #iSearch{
-    background-color:grey;
+    background-color:#f2f2f2;
     border-radius:15px 0 0 15px;
     padding:5px;
 }
+
 
 /*filtres*/
 
@@ -101,6 +108,29 @@ nav ul a:hover{
 	background:#deebff;
 	padding:5px;
 }
+/*Informations*/
+#informations{
+    display:flex;
+    width:50%;
+    position:relative;
+}
+#informations i{
+    display:inline-block;
+    height:10px;
+    font-size:10px;
+    color:#0065FC;
+    border:1px #f2f2f2 solid;
+    border-radius: 100% 110% 100% 110%;
+    margin-right: 15px;
+    padding:5px 8px    ;
+}
+#informations p{
+    position:absolute;
+    border:1px black solid;
+    top:0;
+    left:15px;
+}
+
 /*Zoom*/
 figure:hover{
     transform: scale(1.1);
@@ -110,7 +140,8 @@ figure:hover{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    width:100%;
+    margin:auto;
+    width:98%;
 }
 #detailHebergements{
     width:80%;
@@ -195,17 +226,20 @@ figure:hover{
   .non{
     color:#deebff;
 }
+/*Section Activites*/
 #listeActivites{
     display:flex;
     flex-direction:column;
     justify-content:flex-end;
     position:relative;
+    margin-top:10px;
     width:100%;
-    height:600px; 
-    box-sizing:border-box;
+    height:600px;  
+   
   }
   #listeActivites h2{
     position:absolute;
+    margin:10px auto 10px 20px;
     top:0;
   
   }
@@ -227,8 +261,8 @@ figure:hover{
   }
   .carteColonne{
     height:45%;
-        border-radius:15px;
-    box-shadow: 2px 2px #f2f2f2;
+    border-radius:15px;
+    box-shadow: 2px 2px 15px #f2f2f2;
   }
   .carteColonneImg{
     height:80%;
@@ -240,7 +274,6 @@ figure:hover{
     height:20%;
     background:#fff;  
     border:1px #f2f2f2 solid;
-   
     border-radius:0 0 15px 15px;
   }
   .site{
@@ -254,7 +287,7 @@ figure:hover{
     height:10%;
     background:#fff;
     border:1px #f2f2f2 solid;
-    box-shadow:1px 1px 1px #efefef;
+    /*box-shadow:1px 1px 1px #efefef;*/
     border-radius:0 0 15px 15px;
   }
   
@@ -269,11 +302,12 @@ figure:hover{
   .carteVerticale1{
     width:50%;
     margin: 0 15px 0 15px;
+    padding:2px;
     height:100%;
     border-radius:15px;
-    box-shadow: 2px 2px #f2f2f2;
+    box-shadow: 2px 2px  #f2f2f2;
   }
-  
+
   .carteVerticale2{
     display:flex;
     flex-direction:column;
