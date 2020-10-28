@@ -57,22 +57,25 @@ nav ul a:hover{
     margin:auto auto 25px auto;
 }
 #formulaire{
-    display:flex;
     width:275px;
     height:30px; 
+    border:1px #f2f2f2 solid;
     border-radius:15px;
 }
-
+#search{
+    border:none;
+  }
 #searchButton{
     background-color:#0065fc;;
     color:white;
     padding:5px;
     height:30px;
     border:none;
-    border-radius:0 15px 15px 0;
+    border-radius:0 10px 10px 0;
 }
 
 #iSearch{
+    height:21px;
     background-color:#f2f2f2;
     border-radius:15px 0 0 15px;
     padding:5px;
