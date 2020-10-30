@@ -233,148 +233,101 @@ figure:hover{
   .non{
     color:#deebff;
 }
-/*Section Activites*/
-#listeActivites{
+/*Section Activites Desktop*/
+#activites{
     display:flex;
-    flex-direction:column;
-    justify-content:flex-end;
-    position:relative;
-    margin-top:10px;
-    width:100%;
-    height:600px;  
-   
+    flex-wrap:wrap;
+    justify-content:space-between;
+    width:98%;
+    margin:auto;
   }
-  #listeActivites h2{
-    position:absolute;
-    margin:10px auto 10px 20px;
-    top:0;
-  
+  #activites h2{
+    min-width:80%;
   }
-  #activites{
-      display:flex;
-      justify-content:space-between;
-      flex-wrap:nowrap;
-      width:100%;
-      margin:auto;
-      height:500px;
-      box-sizing:border-box;
-      
-  }
-
-  
-  #activitesPart1{
+  .activiteZone{
     display:flex;
     justify-content:space-between;
-    width:50%;
-    height:100%;
+    height:500px;
+    width:49%;
+  }
+  .carteVerticale{
+    width:46%;
+  }  
+  .partZone1{
+    position:relative;
+    width:100%;
+    height:100%;   
+    border-radius:15px;
+  }
+  .partZone1 h3,.carteZone2 h3{
+    position:absolute;
+    background:#fff;
+    bottom:0;
+    width:100%;
+    height:50px;
+    padding:2px 0 0 0;
+    margin:2px 0 0 0;
+    box-sizing: border-box;
+    border:1px #f2f2f2 solid;
+    border-radius:0 0 15px 15px; 
+  }
+  .partZone1 h3 span,.carteZone2 h3 span{
+    display:block;
+    margin:10px 0 0 10px;
+    font-weight:bold;
+  }
+  .carte :hover{
+    transform:scale(1.01);
+  }
+
+  .partZone2{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;    
+    width:50%; 
+    height:100%;    
   }
   .vignette{
-    width:50%;
+    height:45%;
   }
-  .carteVerticale1{
-    display:flex;
-    flex-direction:column;
-    width:100%;
-    height:100%;
-    border:1px #f2f2f2 solid;
-    border-radius:15px;
-  }
-  .carte{
+  .carteZone2{
     position:relative;
     width:100%;
-    height:100%;
+    height:100%;   
     border-radius:15px;
-    box-sizing: border-box;
-  }
-  .carte h3{
-    position:absolute;
-    bottom:0;    
-    margin-bottom:0;
-    height:12%;
-    width:100%;
-    color:#000;
-    background:#fff;
-    border-radius:0 0 15px 15px;
-    padding:15px 5px 5px 25px;
-    box-sizing: border-box;
-
-  }
-    .carteColonne h3{
-    position:absolute;
-    bottom:0;
-    margin-bottom:0;
-    height:25%;
-    width:100%;
-    color:#000;
-    background:#fff;
-    border-radius:0 0 15px 15px;
-    padding:15px 5px 5px 25px;
-    box-sizing: border-box;
-  }
-  .carteVerticale1 :hover{
-    box-shadow:10px 5px 5px #f1f1f1;
   }
 
-  .carteVerticale2{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    margin: 0 15px 0 15px;
-    width:50%; 
-    height:100%;
+  #carte1{
+    background-image:url("../images/activites/3_medium/reno-laithienne-qugjhdy5fyk-unsplash.jpg");
+    background-size: cover;
   }
-.vignetteColonne{
-  width:100%;
-  height:45%;
-  border:1px #f2f2f2 solid;
-  border-radius:15px;
-}
-.carteColonne{
-    display:flex;
-    flex-direction:column;
-    position:relative;
-    width:100%;
-    height:100%;
-    border-radius:15px;
-    box-sizing: border-box;
-  }
-
-
-.vignetteColonne :hover{
-  box-shadow:10px 5px 5px #f1f1f1;
-}
-
-  #activitesPart2{
-    display:flex;
-    justify-content:space-between;
-    width:50%;
-    height:100%;
-  }
-  
-#carte1{
-  background-image:url("../images/activites/3_medium/reno-laithienne-qugjhdy5fyk-unsplash.jpg");
-  background-size: contain;
-}
-#carte2{
+  #carte2{
     background-image: url("../images/activites/4_small/paul-hermann-QFTrLdQIRhI-resize.jpg");
-    background-size: contain;
+    background-size: cover;
   }
 #carte3{
     background-image: url("../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-    background-size: contain;
+    background-size: cover;
   }
+
 #carte4{
     background-image: url("../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-    background-size: contain;
+    background-size: cover;
   }
-  #carte5{
+#carte5{
     background-image: url("../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-    background-size: contain;
+    background-size: cover;
   }
-  #carte6{
+#carte6{
     background-image: url("../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-    background-size: contain;
+    background-size: cover;
   }
+
+
+
+
+
+/*fin activites Desktop*/
 
 /*footer*/
 footer{
@@ -494,15 +447,34 @@ header{
 .popularHebergement div{
     width:180px;
 }
-/*Section activités*/
+
+
+/*@media Section activités*/
 #activites{
-    display:flex;
+    position:relative;
     flex-direction:column;
+    align-items:center;
+    flex-wrap:nowrap;
+  }
+  
+  
+  
+  .activiteZone{
+    flex-direction:column;
+    align-items:center;
+    align-content:space-between;
+    width:90%;
+    min-height:1000px;
+  }
+  .carteVerticale{
+    width:90%;
+    height:50%;
+  }
+  .partZone2{
+    width:90%;
     height:100%;
-}
-.listActivite{
-    max-height:200px;
-}
+  
+  }
 
 /*footer*/
 #footer{
