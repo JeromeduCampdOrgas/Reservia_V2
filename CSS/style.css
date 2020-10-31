@@ -1,5 +1,5 @@
 body{
-    width:99%;
+    width:95%;
     font-family: 'Raleway', sans-serif;
     color:black;
 }
@@ -234,12 +234,11 @@ figure:hover{
     color:#deebff;
 }
 /*Section Activites Desktop*/
-#activites{
+  #activites{
     display:flex;
     flex-wrap:wrap;
-    justify-content:space-between;
+    justify-content: space-between;
     width:98%;
-    margin:auto;
   }
   #activites h2{
     min-width:80%;
@@ -270,13 +269,14 @@ figure:hover{
     box-sizing: border-box;
     border:1px #f2f2f2 solid;
     border-radius:0 0 15px 15px; 
+    box-shadow: 0 5px 5px #f2f2f2;
   }
   .partZone1 h3 span,.carteZone2 h3 span{
     display:block;
     margin:10px 0 0 10px;
-    font-weight:bold;
+    font-weight:bolder;
   }
-  .carte :hover{
+  .carteVerticale a :hover , .vignette a :hover{
     transform:scale(1.01);
   }
 
@@ -328,7 +328,6 @@ figure:hover{
 
 
 /*fin activites Desktop*/
-
 /*footer*/
 footer{
     display:flex;
@@ -353,6 +352,10 @@ footer{
 
 @media screen and (max-width:800px){
 /*en-tete*/
+body{
+  width:92%;
+  box-sizing:border-box;
+}
 header{
     height:80px;
 }
@@ -387,7 +390,7 @@ header{
 }
 #menu li:hover{
     border-bottom:2px solid blue;
-}	
+} 
 
 /*Recherche et filtres*/
         /*filtres*/
@@ -409,6 +412,7 @@ header{
 #hebergements{
     display:flex;
     flex-direction:column-reverse;
+    right:0;
     width:100%;
 }
 #detailHebergements{
@@ -422,7 +426,7 @@ header{
     background:#fff;
 }
 .imgHebergement{
-    margin:auto;
+    box-shadow:0 5px 5px #f2f2f2;
 }
 /*les populaires*/
 #popularHebergements{
@@ -451,39 +455,41 @@ header{
 
 /*@media Section activités*/
 #activites{
-    position:relative;
-    flex-direction:column;
-    align-items:center;
-    flex-wrap:nowrap;
-  }
-  
-  .activiteZone{
-    flex-direction:column;
-    align-items:center;
-    justify-content:space-between;
-    width:90%;
-    height:auto;
-  
-  }
-  .carteVerticale{
-    width:90%;
-    height:50%;
-  }
-  .partZone2{
-    width:90%;
-    height:100%;
-  
-  }
-  .vignettePhone{
-    min-height:250px;
-    margin-bottom:30px;
-  
-  }
+  position:relative;
+  flex-direction:column;
+  align-items:center;
+  flex-wrap:nowrap;
+}
 
+.activiteZone{
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-between;
+  width:90%;
+  height:auto;
+
+}
+.carteVerticale{
+  width:90%;
+  height:50%;
+}
+.partZone2{
+  width:90%;
+  height:100%;
+
+}
+.vignettePhone{
+  min-height:250px;
+  margin-bottom:30px;
+
+}
+
+/*fin @media section activites*/
 /*footer*/
 #footer{
     display:flex;
     flex-direction:column;
+    width:100%%;
 }
 
 /*Fin @media*/
