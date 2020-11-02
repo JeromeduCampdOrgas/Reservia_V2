@@ -1,5 +1,5 @@
 body{
-    width:95%;
+    width:99%;
     font-family: 'Raleway', sans-serif;
     color:black;
 }
@@ -148,10 +148,10 @@ figure:hover{
     flex-direction:row;
     justify-content:space-between;
     margin:auto;
-    width:98%;
+    width:100%;
 }
 #detailHebergements{
-    width:80%;
+    width:79%;
     margin-right:50px;
 }
 #listHebergements{
@@ -163,8 +163,8 @@ figure:hover{
     border-radius:15px;
 }
 #detailHebergements h2{
-    width:80%;
-    margin-left:50px;
+    width:100%;
+    margin-left:45px;
 }
 #detailHebergements h4 {
     width:70%;
@@ -179,6 +179,7 @@ figure:hover{
     position:relative;
     max-width:240px;
     padding:5px;
+    box-sizing: border-box;
     border-radius:15px;
     background:#fff;
 }
@@ -202,7 +203,7 @@ figure:hover{
 }
 
 #popularHebergements{
-    width:30%;
+    width:32%;
     background-color:#f2f2f2;
     border-radius:15px;
 }
@@ -212,6 +213,7 @@ figure:hover{
 
 .popularHebergement{
     display:flex;
+    justify-content:space-around;
     background:#fff;
     padding:2px;
     border-radius:15px;
@@ -274,6 +276,7 @@ figure:hover{
   .partZone1 h3 span,.carteZone2 h3 span{
     display:block;
     margin:10px 0 0 10px;
+    color:#000;
     font-weight:bolder;
   }
   .carteVerticale a :hover , .vignette a :hover{
@@ -386,7 +389,6 @@ header{
 }
 #menu li{
     margin:auto;
-    border-bottom:2px solid red;
 }
 #menu li:hover{
     border-bottom:2px solid blue;
@@ -489,7 +491,7 @@ header{
 #footer{
     display:flex;
     flex-direction:column;
-    width:100%%;
+    width:100%;
 }
 
 /*Fin @media*/
