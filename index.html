@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/reservia_test.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&family=Raleway:wght@100&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 
@@ -88,7 +88,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star non"></i>
                 </figure>
-                <figure class = "imgHebergement">
+                <figure class = "imgHebergement" >
                     <a href="#"><img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"  alt="Hôtel du port"></a>
                     <span>Hôtel du port</span><br/>
                         Nuit à partir de <span class="tarifs">52€</span><br/>
@@ -97,7 +97,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>                
-                    </figure>
+                </figure>
                 <figure class = "imgHebergement">
                     <a href="#"><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"  alt="Hôtel Les mouettes"></a>
                     <span>Hôtel Les mouettes</span><br/>
@@ -107,7 +107,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star non"></i>                
-                    </figure>
+                </figure>
                 <figure class = "imgHebergement">
                     <a href="#"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"  alt="Hôtel de la mer"></a>
                     <span>Hôtel de la mer</span><br/>
@@ -117,7 +117,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star non"></i>
                         <i class="fas fa-star non"></i>                
-                    </figure>
+                </figure>
                 <figure class = "imgHebergement">
                     <a href="#"><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier"></a>
                     <span>Auberge Le Panier</span><br/>
@@ -127,7 +127,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star non"></i>                
-                    </figure>
+                </figure>
                 <figure class = "imgHebergement">
                     <a href="#"><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel chez Amina"></a>
                     <span>Hôtel chez Amina</span><br/>
@@ -137,7 +137,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>                
-                    </figure>
+                </figure>
 
 
                
@@ -147,50 +147,87 @@
        </div>
         <!--les hébergements les plus populaires--> 
        <aside id="popularHebergements">
-            <div id="titlePopular">
-                <h2>Les plus populaires</h2>
-                <i class="fas fa-chart-line"></i>
-            </div>
-                <figure class= "popularHebergement">
-                    <a href="#"><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"  alt=""></a>
-                    <div>
-                        <span>Hôtel Le soleil du matin</span><br/>
-                            Nuit à partir de <span class="tarifs">128€</span><br/>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>                    
-                    </div>
-                </figure>
 
-                <figure class= "popularHebergement">
-                    <a href="#"><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"  alt=""></a>
-                    <div>
-                        <span>Au coeur de l'eau<br/>
-                        Chambres d'hôtes</span><br/>
-                        Nuit à partir de <span class="tarifs">71€</span><br/>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star non"></i>                    
-                </div>
-                </figure>
-                <figure class= "popularHebergement">
-                    <a href="#"><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"  alt=""></a>
-                    <div>
-                        <span>Hôtel Tout bleu et Blanc</span><br/>
-                            Nuit à partir de <span class="tarifs">68€</span><br/>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star non"></i>                    
-                    </div>
-                </figure>
+                <h2 id="titlePopular">Les plus populaires<i class="fas fa-chart-line"></i></h2>
+                
 
- 
+
+
+              	<div id= "popularHebergementTest">
+              		
+	              		<div class= "popVignette" >
+	              			<a href="">
+	              				<div class= "detailPop">
+			              			<div class = "imgPop" id = "hebergement1"></div>
+			              		
+			              			<div class = "hebergePopDescription">
+			              				<div class = "hebergePopNom">
+				              				<H4>Hôtel Le soleil du matin</H4>
+				              				<p>Nuit à partir de <span>128€</span></p>
+				              			</div>
+			              				<div class = "popStars">
+			              					<i class="fas fa-star"></i>
+				                            <i class="fas fa-star"></i>
+				                            <i class="fas fa-star"></i>
+				                            <i class="fas fa-star"></i>
+				                            <i class="fas fa-star"></i>   
+			              				</div>    
+			              			</div>
+		              			</div>
+	              			</a>
+	              		</div>
+
+	              	
+              		
+              			<div class= "popVignette" >
+              				<a href="">
+		              			<div class= "detailPop">
+		              				<div class = "imgPop" id = "hebergement2"></div>
+		              		
+			              			<div class = "hebergePopDescription">
+			              					<div class = "hebergePopNom">
+					              				<H4>Au coeur de l'eau Chambres d'hôtes</H4>
+					              				<p>Nuit à partir de <span>71€</span></p>
+				              				</div>
+				              				<div class = "popStars">
+				              					<i class="fas fa-star"></i>
+					                            <i class="fas fa-star"></i>
+					                            <i class="fas fa-star"></i>
+					                            <i class="fas fa-star"></i>
+					                            <i class="fas fa-star non"></i>   
+				              				</div>    
+			              			</div>
+		              			</div>
+	              			</a>
+              			</div>
+              		
+              		
+              			<div class= "popVignette" >
+              				<a href="">
+		              			<div class= "detailPop">
+		              				<div class = "imgPop" id = "hebergement3"></div>
+		              		
+			              			<div class = "hebergePopDescription">
+			              				<div class = "hebergePopNom">
+				              				<H4>Hôtel Tout bleu et blanc</H4>
+				              				<p>Nuit à partir de <span>68€</span></p>
+				              			</div>
+				              				<div class = "popStars">
+				              					<i class="fas fa-star"></i>
+					                            <i class="fas fa-star"></i>
+					                            <i class="fas fa-star"></i>
+					                            <i class="fas fa-star"></i>
+					                            <i class="fas fa-star non"></i>   
+				              				</div>    
+			              			</div>
+	              				</div>
+              				</a>
+              			</div>
+              		
+
+              		
+
+ 				</div>
 
        </aside>
 
@@ -274,7 +311,8 @@
 	
 
 	<!--Fin activites-->
-   
+
+   <!--Debut footer-->
     <footer id = "footer">
         
             <div id ="about" class = "footerElement">
