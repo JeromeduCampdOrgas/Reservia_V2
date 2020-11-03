@@ -1,0 +1,14 @@
+
+#hebergements{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    border:1px black solid;
+    background:grey;
+}
+#details{
+    max-width: 70%;
+}
+#populaires{
+    width:20%;
+}
