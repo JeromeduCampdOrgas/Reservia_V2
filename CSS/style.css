@@ -20,6 +20,9 @@ h2{
 h3{
     font-weight:bold;
 }
+.tarifs{
+    font-weight:bold;
+}
 /* Header */
 #entete{
     display:flex;
@@ -187,9 +190,7 @@ figure:hover{
     max-height:150px;
     border-radius:15px 15px 0 0;
 }
-.imgHebergement span{
-    font-weight:bold;
-}
+
 /*les plus populaires*/
 
 #titlePopular{
@@ -206,7 +207,6 @@ figure:hover{
     flex-direction: column;
     background-color:#f2f2f2;
     border-radius:15px;
-
 }
 #popularHebergementTest{
     display:flex;
@@ -257,9 +257,11 @@ figure:hover{
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    padding-left:23px;
+    padding-left:25px;
 }
-
+.hebergePopDescription{
+    min-width:51%;
+}
 .popVignette :hover div{
     transform:scale(1.04);
 }
@@ -436,7 +438,6 @@ header{
 }
 #menu li{
     margin:auto;
-
 }
 #menu li:hover{
     border-bottom:2px solid blue;
@@ -450,7 +451,7 @@ header{
     align-items: flex-start;
     width:100%;
     }
-    #filterZone{
+#filterZone{
     display:flex;
     align-content: flex-start;
     flex-wrap:wrap;
@@ -475,7 +476,6 @@ header{
     display:flex;
     justify-content:center;
     background:#fff;
-    
 }
 .imgHebergement{
     min-width:405px;
@@ -533,7 +533,6 @@ header{
   justify-content:space-between;
   width:90%;
   height:auto;
-
 }
 .carteVerticale{
   width:90%;
@@ -547,7 +546,6 @@ header{
 .vignettePhone{
   min-height:250px;
   margin-bottom:30px;
-
 }
 
 /*fin @media section activites*/
@@ -555,7 +553,7 @@ header{
 #footer{
     display:flex;
     flex-direction:column;
-    width:100%%;
+    width:100%;
 }
 
 /*Fin @media*/
